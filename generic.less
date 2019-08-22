@@ -1,0 +1,160 @@
+/*
+ * Author: Isak Combrinck
+ * Theme: Generic Dark
+ * Version: 1.0.0
+ */
+
+/* Colors */
+@background                     : #111111;
+@background-accent-dark         : #666666;
+@background-accent-light        : #222222;
+
+@foreground                     : #DDDDDD;
+@text                           : #d0d0d0;
+@string                         : #889988;
+
+@error                          : #CD5C5C;
+@cursor                         : #CD5C5C;
+
+@comment                        : #777777;
+@matching-bracket               : #999999;
+
+@orange                         : #db955c;
+@yellow                         : #bfac84;
+@green                          : #689F38;
+@blue                           : #6ba9c9;
+@purple                         : #bc91c9;
+
+/* Styles */
+.CodeMirror .cm-number,
+.CodeMirror .cm-property,
+.CodeMirror .cm-operator,
+.CodeMirror .cm-meta,
+.CodeMirror .cm-bracket {
+    color: @foreground;
+}
+
+
+.CodeMirror .cm-tag {
+    color: @yellow;
+}
+
+.CodeMirror .cm-comment {
+    color: @comment;
+}
+
+.CodeMirror .cm-atom,
+.CodeMirror .cm-string,
+.CodeMirror .cm-string-2 {
+    color: @string;
+}
+
+.CodeMirror .cm-error {
+    color: @error !important;
+}
+
+.CodeMirror .cm-keyword,
+.CodeMirror .cm-header,
+.CodeMirror .cm-rangeinfo {
+    color: @orange;
+}
+
+.CodeMirror .cm-variable,
+.CodeMirror .cm-qualifier,
+.CodeMirror .cm-builtin {
+    color: @purple;
+}
+
+.CodeMirror .cm-def,
+.CodeMirror .cm-variable-2,
+.CodeMirror .cm-attribute,
+.CodeMirror .cm-quote {
+    color: @blue;
+}
+
+
+.CodeMirror .cm-def {
+    color: @purple;
+}
+
+.CodeMirror .cm-variable-3,
+.CodeMirror .cm-hr {
+    color: @yellow;
+}
+
+.CodeMirror .cm-plus {
+    color: @green;
+}
+
+.CodeMirror .cm-link,
+.CodeMirror .cm-minus {
+    color: @foreground;
+    background: @background;
+}
+
+.CodeMirror,
+.CodeMirror-scroll {
+    background-color: @background;
+    color: @foreground;
+    line-height: 175%;
+}
+
+.CodeMirror-gutters {
+    background-color: @background;
+    border-right:  none;
+}
+.CodeMirror-linenumber {
+    font-weight: bold;
+    color: @background-accent-dark;
+}
+
+.CodeMirror-foldmarker {
+    border: none;
+    color: @background;
+    background-color: @foreground;
+}
+
+.show-line-padding.CodeMirror-focused .CodeMirror-activeline-background {
+    box-shadow: inset 15px 0 0 0 #000;
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+    .inline-widget .CodeMirror-gutter-elt {
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+}
+
+.CodeMirror-searching {
+    background-color: @foreground;
+    &.searching-current-match {
+        background-color: @cursor;
+    }
+}
+
+.CodeMirror-cursor {
+    border-left: 2px solid @cursor !important;
+}
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 2px solid @cursor;
+}
+
+.CodeMirror-focused .CodeMirror-selected,
+.CodeMirror .CodeMirror-selected {
+    background: @background-accent-dark;
+}
+
+.CodeMirror-matchingtag {
+    background: @background-accent-light;
+}
+
+.CodeMirror-matchingbracket {
+    text-shadow: 0 0 3px @cursor;
+    color: @cursor !important;
+    background: none;
+}

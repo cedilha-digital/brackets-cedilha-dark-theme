@@ -1,0 +1,15 @@
+{
+    "title": "Cedilha Dark Theme",
+    "name": "cedilha-dark-theme",
+    "description": "A confortable dark theme base on generic dark theme from Isak Combrick.",
+    "version": "1.0.0",
+    "homepage": "https://gitlab.com/cedilhadigital/brackets--cedilha-dark-theme",
+    "author": "Sergio Mari",
+    "email": "sergio@cedilha.com.br",
+    "license": "MIT",
+    "theme": {
+        "file": "generic.less",
+        "dark": true
+    },
+    "keywords": ["theme","generic","dark","readable","colorful","subtle","matte"]
+}
